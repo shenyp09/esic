@@ -318,6 +318,7 @@ div.para {
     display: block;
     width: 220px;
     height: 220px;
+    /*opacity: 0.8;*/
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -914,6 +915,7 @@ th.specalt {
     font: bold 10px"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
     color: #797268;
 }
+
 /* ---------- Other elements ---------- */
  .banner1 {
     width: 890px;
@@ -947,8 +949,9 @@ th.specalt {
 .block1 {
     position: relative;
     float: left;
-    margin-right: 40px;
-    left: 20px;
+    margin-right: 60px;
+    /*width: 210px;*/
+    left: 10px;
     top: 10px;
     margin-bottom: 10px;
 }
