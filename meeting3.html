@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="styl.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/banner.js" type="text/javascript"></script>
+
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    <link rel="stylesheet" href="xtyle/css/xtyle.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -88,158 +95,165 @@
             </h3>
         </div>
         <hr class="cleanit">
-        <div id="content_text">
-            <table class="longtable">
-                <caption></caption>
-                <tr>
-                    <th scope="col">报告名称</th>
-                    <th scope="col">报告人</th>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/wpliu.pdf" class="table1" target="_blank">
+        <div class="grid">
+            <div class="grid1" style="width:90%;margin-left:5%">
+                <div class="border border-radius">
+                    <table class="hover pointer" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>报告名称</th>
+                                <th style="width:20%">报告人</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/wpliu.pdf" target="_blank">
                                 核天体物理创新群体报告
                             </a>
-                    </td>
-                    <td class="row">
-                        柳卫平
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/zhli.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    柳卫平
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/zhli.pdf" target="_blank">
                                 原初锂丰度研究进展
                             </a>
-                    </td>
-                    <td class="row">
-                        李志宏
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/wyb.pdf" class="table1" target="_blank">
-                            <sup>
+                                </td>
+                                <td>
+                                    李志宏
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/wyb.pdf" target="_blank">
+                                        <sup>
                                     22
                                 </sup>
-                            Na+&alpha;/p共振散射的实验研究
-                        </a>
-                    </td>
-                    <td class="row">
-                        王友宝
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/YSC.pdf" class="table1" target="_blank">
+                                        Na+&alpha;/p共振散射的实验研究
+                                    </a>
+                                </td>
+                                <td>
+                                    王友宝
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/YSC.pdf" target="_blank">
                                 s-process of fifty years
                             </a>
-                    </td>
-                    <td class="row">
-                        陈永寿
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/HuJun.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    陈永寿
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/HuJun.pdf" target="_blank">
                                 兰州核天体物理研究进展
                             </a>
-                    </td>
-                    <td class="row">
-                        胡钧
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/B.Guo-first stars.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    胡钧
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/B.Guo-first stars.pdf" target="_blank">
                                 宇宙中第一代恒星演化的研究进展
                             </a>
-                    </td>
-                    <td class="row">
-                        郭冰
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/lg.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    郭冰
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/lg.pdf" target="_blank">
                                 超导螺线管谱仪
                             </a>
-                    </td>
-                    <td class="row">
-                        连钢
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting03/2011元素核合成中的关键科学问题研究创新群体会议报告.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    连钢
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting03/2011元素核合成中的关键科学问题研究创新群体会议报告.pdf" target="_blank">
                                 核天体物理的世纪性难题<sup>12</sup>C(&alpha;,&gamma;)<sup>16</sup>O反应的研究现状和前景
                             </a>
-                    </td>
-                    <td class="row">
-                        白希祥
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/TangXD.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    白希祥
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/TangXD.pdf" target="_blank">
                                 My Vision of the Future Nuclear Astrophysics in China
                             </a>
-                    </td>
-                    <td class="row">
-                        唐晓东
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/SNC.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    唐晓东
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/SNC.pdf" target="_blank">
                                 核反应网络方程计算程序的界面设计和灵敏度计算
                             </a>
-                    </td>
-                    <td class="row">
-                        舒能川
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/GaoZCh.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    舒能川
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/GaoZCh.pdf" target="_blank">
                                 Spectroscopic factors in the projected shell model
                             </a>
-                    </td>
-                    <td class="row">
-                        高早春
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/GuJianzhong.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    高早春
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/GuJianzhong.pdf" target="_blank">
                                 Tensor Force Effect on the structure of light nuclei
                             </a>
-                    </td>
-                    <td class="row">
-                        顾建中
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/PangDY.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    顾建中
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/PangDY.pdf" target="_blank">
                                 Towards a systematic nucleus-nucleus potential with a single-folding model
                                 approach
                             </a>
-                    </td>
-                    <td class="row">
-                        庞丹阳
-                    </td>
-                </tr>
-                <tr>
-                    <td class="row">
-                        <a href="files/meeting2012/会议纪要.pdf" class="table1" target="_blank">
+                                </td>
+                                <td>
+                                    庞丹阳
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="files/meeting2012/会议纪要.pdf" target="_blank">
                                 会议记要
                             </a>
-                    </td>
-                    <td class="row">
-                        苏俊
-                    </td>
-                </tr>
-            </table>
+                                </td>
+                                <td>
+                                    苏俊
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <!-- ** Pagination ** -->

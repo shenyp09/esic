@@ -33,6 +33,11 @@ p a {
 }
 a:hover {
     color: #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 a.button_dark, a.button_light {
     background-color: #e66e0d;
@@ -310,34 +315,59 @@ div.para {
     width: 220px;
     height: 220px;
     margin: 0 6px 20px 10px;
-    background-color: #e66e0d;
+    position: absolute;
     float: left;
     position: relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
 }
 .fourths_portfolio a {
     display: block;
     width: 220px;
     height: 220px;
-    /*opacity: 0.8;*/
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    position: absolute;
+    vertical-align: middle;
+    background-color: #e66e0d;
+    opacity: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .fourths_portfolio a:hover {
-    opacity: 0.15;
+    opacity: 0.7;
+}
+.fourths_portfolio div {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    z-index: -1;
+    /*background-color: #e66e0d;*/
 }
 .fourths_portfolio h4 {
-    position: absolute;
-    top: 80px;
-    display: block;
     width: 220px;
+    margin-top: 80px;
+    position: absolute;
+    display: block;
     text-align: center;
+    vertical-align: middle;
     text-shadow: 0px 1px #d72d05;
+    background-color: rgba(0, 0, 0, 0);
+    /*opacity: 0;*/
 }
 .fourths_portfolio img {
     position: absolute;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /*opacity: 0;*/
+    z-index: -1;
 }
 .fourths_portfolio span {
     font-size: 90%;
@@ -348,10 +378,14 @@ div.para {
     width: 140px;
     height: 160px;
     margin: 0 8px 0 10px;
-    background-color: #e66e0d;
+    /*background-color: #e66e0d;*/
+    background-color: #fff;
     float: left;
     position: relative;
     margin-top: 20px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 .sixths_team a {
     display: block;
@@ -378,6 +412,39 @@ div.para {
 .sixths_team a:hover {
     opacity: 0.10;
 }
+.sixths_team p {
+    display: block;
+    width: 140px;
+    height: 140px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.sixths_team p.profession {
+    display: block;
+    width: 140px;
+    height: 20px;
+    background-color: #fff;
+    color: #e66e0d;
+    text-decoration: none;
+    font-size: 95%;
+    padding-top: 10px;
+}
+.sixths_team b.profession {
+    display: block;
+    width: 140px;
+    height: 20px;
+    background-color: #fff;
+    color: #e66e0d;
+    text-decoration: none;
+    font-size: 95%;
+    padding-top: 10px;
+}
 .sixths_team h4 {
     position: absolute;
     top: 50px;
@@ -391,6 +458,9 @@ div.para {
 }
 .sixths_team img {
     position: absolute;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 .sixths_team span {
     font-weight: 400;
@@ -490,6 +560,9 @@ div.para {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     position: relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 a:hover.services_list {
     background-color: #1e2022;
@@ -527,6 +600,9 @@ a:hover.services_list {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     position: relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 a:hover.four_list {
     background-color: #1e2022;
@@ -563,6 +639,9 @@ a:hover.four_list {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     position: relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 a:hover.two_list {
     background-color: #1e2022;
@@ -844,78 +923,6 @@ form.formit .button_submit {
     position: absolute;
     right: 10px;
 }
-/* ---------- Table ---------- */
- #longtable {
-    width: 850px;
-    padding: 0;
-    margin: 0;
-}
-#longtable2 {
-    width: 880px;
-    padding: 0;
-    margin: 0;
-}
-caption {
-    padding: 0 0 5px 0;
-    width: 850px;
-    font: italic 11px"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    text-align: right;
-}
-th {
-    font: bold 11px"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    color: #000;
-    /*border-right: 1px solid #C1DAD7;*/
-    border-bottom: 1px solid #C1DAD7;
-    border-top: 1px solid #C1DAD7;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 6px 6px 6px 12px;
-    background: #eeeeee no-repeat;
-    font-size: 120%;
-}
-th.nobg {
-    border-top: 0;
-    border-left: 0;
-    /*border-right: 1px solid #C1DAD7;*/
-    background: none;
-}
-td {
-    /*border-right: 1px solid #C1DAD7;*/
-    border-bottom: 1px solid #C1DAD7;
-    background: #fff;
-    font-size:100%;
-    padding: 20px 6px 20px 12px;
-    color: #4f6b72;
-}
-td.alt {
-    background: #F5FAFA;
-    color: #797268;
-}
-a.table1 {
-    text-decoration: none;
-}
-a.table2 {
-    text-decoration: none;
-    position: relative;
-    float: right;
-    top: 23px;
-    right: 20px;
-}
-th.spec {
-    border-left: 1px solid #C1DAD7;
-    border-top: 0;
-    background: #fff no-repeat;
-    font: bold 10px"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-}
-th.specalt {
-    border-left: 1px solid #C1DAD7;
-    border-top: 0;
-    background: #f5fafa no-repeat;
-    font: bold 10px"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    color: #797268;
-}
-
 /* ---------- Other elements ---------- */
  .banner1 {
     width: 890px;
@@ -965,4 +972,33 @@ th.specalt {
     padding-right: 10px;
     margin-bottom: -5px;
     /*wmode: "transparent";*/
+}
+ol {
+    /* Won't be interpreted by IE6/7. */
+    list-style-type: none;
+    counter-reset: level1;
+    line-height: 200%;
+    font-size: 110%;
+    margin-left: 40px;
+}
+ol li:before {
+    content: counter(level1)". ";
+    counter-increment: level1;
+}
+ol li ol {
+    list-style-type: none;
+    counter-reset: level2;
+}
+ol li ol li:before {
+    content: counter(level1)"." counter(level2)" ";
+    counter-increment: level2;
+}
+ol li span {
+    /* For IE6/7. */
+    margin: 0 5px 0 -25px;
+}
+
+.more {
+    float: right;
+    padding: 23px 20px;
 }

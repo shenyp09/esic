@@ -8,9 +8,15 @@
     </title>
     <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js">
     </script>
+    <script src="xtyle/js/xtyle.js"></script>
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="styl.css" type="text/css">
+    <link rel="stylesheet" href="xtyle/css/xtyle.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <link rel="icon" type="image/x-icon" href="xtyle/img/favicon.ico"> -->
+
+
 </head>
 
 <body>
@@ -84,83 +90,88 @@
                 </li>
             </ul>
         </ul>
-        <div id="content_inner">
-            <div id="content_part" align="center">
-                <table id="longtable">
-                    <tr class="row">
-                        <th scope="col"><b>Article</b>
-                            </td>
-                            <th scope="col"><b>Author</b>
+        <div class="grid">
+            <div class="grid1" style="width:90%;margin-left:5%">
+                <div class="border border-radius">
+                    <table class="hover pointer" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th><b>Article</b>
+                                </th>
+                                <th><b>Author</b>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="files/RNB-art/Bai_RNB.pdf" target="_blank">放射性核束物理</a>
                                 </td>
-                    </tr>
-                    <tr>
-                        <td class="row"><a href="files/RNB-art/Bai_RNB.pdf" class="table1" target="_blank" class="table1">放射性核束物理</a>
-                        </td>
-                        <td class="row">白希祥</td>
-                    </tr>
-                    <tr>
-                        <td class="row">
-                            <div class="row">
-                                <strong><a href="files/RNB-art/Bai_sh2012.ppt" target="_blank" class="table1">恒星演化与元素核合成</a>
-                                </strong>
-                            </div>
-                        </td>
-                        <td class="row">白希祥</td>
-                    </tr>
-                    <tr>
-                        <td class="row"><a href="http://books.google.com.hk/books?id=BHKLFPUS1RcC&amp;hl=zh-CN" target="_blank" class="table1">Cauldrons in the Cosmos</a>
-                        </td>
-                        <td class="row">Claus E. Rolfs</td>
-                    </tr>
-                    <tr>
-                        <td class="row"><a href="http://www.google.com.hk/books?id=ZluR33_15G0C&amp;lr=&amp;hl=zh-CN" target="_blank" class="table1">Nuclear Physics of Stars</a>
-                        </td>
-                        <td class="row">Christian Iliadis</td>
-                    </tr>
-                    <tr>
-                        <td class="row"><a href="files/Astro-art/qian.pdf?id=ZluR33_15G0C&amp;lr=&amp;hl=zh-CN" target="_blank" class="table1">原子核天体物理简介</a>
-                        </td>
-                        <td class="row">钱永忠</td>
-                    </tr>
-                    <tr>
-                        <td class="table1"><a href="files/Astro-art/1004.2318v3.pdf" class="table1" target="_blank">Solar fusion cross sections II: the pp chain and CNO cycles</a>
-                        </td>
-                        <td class="row">E. G. Adelberger et al.</td>
-                    </tr>
-                    <tr>
-                        <td class="table1"><a href="files/Astro-art/1107.2234.pdf" class="table1" target="_blank">Nuclear astrophysics: the unﬁnished quest for the origin of the elements</a>
-                        </td>
-                        <td class="row">Jordi Jose</td>
-                    </tr>
-                    <tr>
-                        <td class="table1"><a href="files/Astro-art/RevModPhys.29.547.pdf" class="table1" target="_blank">Synthesis of the Elements in Stars</a>
-                        </td>
-                        <td class="row">B2FH</td>
-                    </tr>
-                </table>
+                                <td>白希祥</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div><a href="files/RNB-art/Bai_sh2012.ppt" target="_blank">恒星演化与元素核合成</a>
+                                    </div>
+                                </td>
+                                <td>白希祥</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://books.google.com.hk/books?id=BHKLFPUS1RcC&amp;hl=zh-CN" target="_blank">Cauldrons in the Cosmos</a>
+                                </td>
+                                <td>Claus E. Rolfs</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.google.com.hk/books?id=ZluR33_15G0C&amp;lr=&amp;hl=zh-CN" target="_blank">Nuclear Physics of Stars</a>
+                                </td>
+                                <td>Christian Iliadis</td>
+                            </tr>
+                            <tr>
+                                <td><a href="files/Astro-art/qian.pdf?id=ZluR33_15G0C&amp;lr=&amp;hl=zh-CN" target="_blank">原子核天体物理简介</a>
+                                </td>
+                                <td>钱永忠</td>
+                            </tr>
+                            <tr>
+                                <td><a href="files/Astro-art/1004.2318v3.pdf" target="_blank">Solar fusion cross sections II: the pp chain and CNO cycles</a>
+                                </td>
+                                <td>E. G. Adelberger et al.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="files/Astro-art/1107.2234.pdf" target="_blank">Nuclear astrophysics: the unﬁnished quest for the origin of the elements</a>
+                                </td>
+                                <td>Jordi Jose</td>
+                            </tr>
+                            <tr>
+                                <td><a href="files/Astro-art/RevModPhys.29.547.pdf" target="_blank">Synthesis of the Elements in Stars</a>
+                                </td>
+                                <td>B2FH</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-    <!-- ********* Footer ********** -->
-    <hr class="cleanit">
-    <div id="footer">
-        <div id="footer_in">
-            <p>
-                <a href="http://creativecommons.org/licenses/by/3.0/">
+
+        <!-- ********* Footer ********** -->
+        <hr class="cleanit">
+        <div id="footer">
+            <div id="footer_in">
+                <p>
+                    <a href="http://creativecommons.org/licenses/by/3.0/">
                         CC Attribution 3.0 Unported
                     </a>
-                &mdash; allowed for commercial and non-commercial use
-            </p>
-            <span>Author: <a href="https://github.com/shenyp09">YP Shen</a> 
-            </span>
+                    &mdash; allowed for commercial and non-commercial use
+                </p>
+                <span>Author: <a href="https://github.com/shenyp09">YP Shen</a> 
+                </span>
+            </div>
         </div>
-    </div>
-    <script>
-    // script for testimonial' tabs
-    $(function() {
-        $("ul.controls").tabs("div.testimonials > div");
-    });
-    </script>
+        <script>
+        // script for testimonial' tabs
+        $(function() {
+            $("ul.controls").tabs("div.testimonials > div");
+        });
+        </script>
 </body>
 
 </html>
