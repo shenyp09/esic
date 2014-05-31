@@ -733,3 +733,182 @@ perspective effects (not including the modals and the overlay).
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
 }
+
+/* Common style */
+.gridp {
+	margin: 0px auto 0px;
+	width: 960px;
+	width: 100%;
+	/*border: 10px;*/
+	border-width: 0px;
+}
+
+.gridp a {
+	float: left;
+	/*max-width: 250px;*/
+	width: 220px;
+	color: #333;
+	border: 1px solid rgba(0, 0, 0, .2);
+	margin: 0px 26px 0 -10px;
+}
+
+/*.gridp a:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}*/
+
+.gridp figure {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	/*background: #333;*/
+}
+
+.gridp figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.gridp figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
+	/*background: #333;*/
+}
+
+
+
+.gridp figcaption h2 {
+	margin: 0px 0 5px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 95%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.gridp figcaption p {
+	padding: 5px 10px;
+	color: #aaa;
+	font-size: 80%;
+	font-weight: 500;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.gridp figcaption h2,
+.gridp figcaption p {
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+}
+.gridp figcaption,
+.gridp figcaption h2,
+.gridp figcaption p {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.gridp svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.gridp svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.gridp a:hover figure img {
+	opacity: 1;
+}
+
+.gridp a:hover figcaption h2,
+.gridp a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.gridp a:hover figcaption p {
+	opacity: 0;
+}
+
+.gridp a:hover figcaption a,
+.gridp a:hover figcaption h2,
+.gridp a:hover svg {
+	opacity: 0.8;
+}
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+/*
+@media screen and (max-width: 58em) {
+	.gridp a {
+		width: 33.333%;
+	}
+
+	.gridp a:nth-child(odd) {
+		margin: 0;
+	}
+
+	.gridp a:nth-child(3n-1) {
+		margin: 30px 0 -30px 0;
+	}
+}
+*/
+/*@media screen and (max-width: 45em) {
+	.gridp {
+		max-width: 500px;
+	}
+
+	.gridp a {
+		width: 50%;
+	}
+
+	.gridp a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.gridp a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.gridp figcaption h2 {
+		margin-bottom: 0px;
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	.gridp figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.gridp {
+		max-width: 250px;
+	}
+
+	.gridp a {
+		width: 100%;
+	}
+
+	.gridp a:nth-child(even) {
+		margin: 0;
+	}
+}*/
